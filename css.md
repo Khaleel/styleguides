@@ -7,6 +7,27 @@
 * [Bleeding edge features](#bleeding-edge-features)
 * [Sass nesting](#sass-nesting)
 
+## Minify
+We use LESS for all Object Orientating CSS across the GMG board - do not use ANY other pre-processing
+Always make sure you have a backup of the original less.less, css.css and your main source codes.
+CSS if not using LESS should be one line minified with no trailing ; or spacing so this is bad:
+
+```
+/*
+BAD FINAL CODE
+*/
+body { background: #000; font-weight:bold; font-family:verdana;}
+div{width: 100%;
+ font-family:verdana;}
+ 
+/*
+THE GOOD VERSION
+*/
+body{background:#000;font-weight:bold;font-family:Verdana}
+div{font-family:inherit;width:100%}
+
+```
+
 ## Whitespace
 
 Use soft tabs with a two space indent.
